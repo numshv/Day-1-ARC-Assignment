@@ -1,0 +1,19 @@
+Apa itu git rebase?
+
+git rebase menyambungkan riwayat perubahan suatu branch ke branch lainnnya dengan menyambungkan base (awal) dari suatu branch ke end (ujung) branch utamanya menjadi sehingga menjadi satu riwayat perubahan tanpa percabangan.
+
+Contoh kasus:
+
+Riwayat perubahan pada branch utama:
+
+C -> D -> E -> F
+
+
+Riwayat perubahan pada branch 1:
+
+A -> B
+
+
+Keadaan riwayat perubahan setelah branch 1 di-rebase ke branch utama:
+
+C -> D -> E -> F -> A -> B

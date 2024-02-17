@@ -1,0 +1,37 @@
+Apa itu merge conflict dan cara menanggulanginya?
+
+Merge conflict adalah suatu keadaan dimana 2 branch atau lebih yang kemudian akan di-merge membuat perubahaan yang berbeda pada baris kode yang sama. Contohnya kira-kira seperti ini.
+
+
+KODE SEBELUM PERUBAHAN
+
+<body>
+    <h1>Makan Yuk!</h1>
+    <h2>Laper pls </h2>
+</body>
+
+
+
+PERUBAHAN KODE OLEH BRANCH A
+
+<body>
+    <h1>Stop Makan!</h1>
+    <p>makan mulu bang<p>
+</body>
+
+
+
+PERUBAHAN KODE OLEH BRANCH B
+
+<body>
+    <h2>Makan Yuk!</h2>
+    <p>sabi lah bang<p>
+</body>
+
+
+Dapat dilihat, baik branch A maupun branch B sama-sama melakukan perubahan pada baris ke 2 dan 3, namun perubahan yang dilakukan pada kedua baris berbeda. Ketika akan di-merge, akan terjadi merge conflict karena Git/Github tidak bisa menentukan perubahan mana yang pada akhirnya akan di commit.
+
+Lalu bagaimana cara menanggulanginya?
+1. Identifikasi terlebih dahulu baris kode yang mana saja yang mengalami konflik. Hal ini dapat dilakukan dengan melihat status perubahan melalui command git status atau command lainnya. Atau bahkan beberapa IDE dengan GUI yang sudah advance yang langsung memberi tahu bagian mana saja yang konflik.
+2. Setelah itu tentukan secara manual perubahan seperti apa yang sebenarnya mau dilakukan. Apakah perubahan seoeti yang dilakukan pada branch A atau branch B, atau mungkin kombinasi keduanya.
+3. Bila file telah dimodifikasi, stage ulang perubahanya, lalu commit seperti biasa filenya.

@@ -1,0 +1,5 @@
+Apa itu fork dan pull request github?
+
+fork atau forking adalah kegiatan menduplikat repository akun github lain beserta histori-historinya ke akun github kita. Though github bakal kasih notice semacam kredit gitu kalau kita "forking" ini dari akun mana.
+
+Sedangkan pull request github memberi tahu/memberi request ke pemilik repository atas perubahan yang telah/ingin kamu kontribusikan pada repository tersebut. Biasanya sebelumnya repository yang ingin diubah di-"fork" terlebih dahulu ke akunmu. Setelah itu, repository tersebut di-clone ke sistem lokal dan diberi perubahan yang ingin dibuat di sistem lokal. Setelah itu baru kamu melakukan pull request atas perubahan yang kamu buat tadi dengan harapan dapat membantu menyelesikan masalah yang ada pada repository tersebut.
